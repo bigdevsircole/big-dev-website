@@ -10,7 +10,7 @@ export const Home = () => {
           <div className="hero-content">
             <h1 className="hero-title">A Developer and More</h1>
             <p className="hero-description">
-              Versatile Full Stack Developer who combines technical expertise in design and digital marketing skills to deliver solutions that drive user engagement and business growth.
+            Versatile Full Stack Developer who combines technical expertise in design and digital marketing skills to deliver solutions that drive user engagement and business growth. I've honed my expertise in crafting seamless digital experiences from frontend to backend using JavaScript, Reacht.JS, Next.JS, Node.JS, Git & GitHub, Tailwind CSS, Bootstrap, Jquery, EmailJS, CSS, HTML, Photoshop, CorelDraw, WordPress, Figma, Canva, and Generative AI.
             </p>
             <div className="hero-buttons">
               <Link to="/Projects" className="hero-cta view-work">View My Work</Link>
