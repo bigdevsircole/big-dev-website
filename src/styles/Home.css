@@ -97,24 +97,51 @@ h2 {
   gap: 20px;
 }
 
-.portfolio-card {
+.portfolio-card1, .portfolio-card2, .portfolio-card3 {
   width: 300px;
   border: 2px solid #feb100;
   padding: 20px;
   border-radius: 8px;
+  color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/project_x_icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.portfolio-card:hover {
+
+.portfolio-card1:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 
-.portfolio-card h3 {
-  margin-bottom: 10px;
-  color: #000000;
+.portfolio-card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.portfolio-card3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card3 a {
+  text-decoration: none;
+  color: white;
 }
 
 .reachout form {

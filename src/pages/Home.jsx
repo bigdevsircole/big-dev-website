@@ -42,18 +42,17 @@ export const Home = () => {
         <section className="portfolio">
           <h2>Portfolio</h2>
           <div className="portfolio-list">
-            <div className="portfolio-card">
-              <a href="https://github.com/bigdevsircole/project_x">
-              <h3>E-Commerce Platform</h3>
-              <p>A fully functional e-commerce website built with MERN stack.</p>
+            <div className="portfolio-card1">
+              <a href="https://project-x-plum-omega.vercel.app/" target='_blank'>
+              <h3>Project X</h3>
+              <p>A demo website that was built on HTML, CSS and Javascript.</p>
               </a>
-
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card2">
               <h3>Portfolio Website</h3>
               <p>A personal portfolio showcasing my skills and projects.</p>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card3">
               <h3>Task Management App</h3>
               <p>A task management tool built with React and Firebase.</p>
             </div>
