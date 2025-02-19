@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './styles/App.css';
-import { Home, Expertise, Githubuser, Projects, Reachout } from '../src/pages';
+import { Home, Expertise, Projects, Reachout } from '../src/pages';
 import Homelayout from './pages/Homelayout';
 
 const router = createBrowserRouter([
@@ -16,10 +16,10 @@ const router = createBrowserRouter([
         path: "/expertise",
         element: <Expertise />,
       },
-      {
-        path: "/githubuser",
-        element: <Githubuser />,
-      },
+      // {
+      //   path: "/githubuser",
+      //   element: <Githubuser />,
+      // },
       {
         path: "/projects",
         element: <Projects />,

@@ -2,9 +2,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     color: white;
   }
+
   
   .nav-button {
     background-color: #ffffff;
@@ -60,7 +61,7 @@ nav {
   
   @media (max-width: 480px) {
     .profile-pic {
-      width: 50px;
+      width: auto;
     }
   
     .nav-button {

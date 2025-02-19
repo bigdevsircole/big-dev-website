@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <a rel='noopener noreferrer' href="/Reachout" className="nav-button">Reachout</a>
 
-        <a rel='noopener noreferrer' href="/Githubuser" className="nav-button">Github User</a>
+        {/* <a rel='noopener noreferrer' href="/Githubuser" className="nav-button">Github User</a> */}
       </div>
 
       <div className="icons">
