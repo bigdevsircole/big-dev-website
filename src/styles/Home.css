@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  background-color: #f8f8f8;
+  background-color: #1D3058;
 }
 
 section {
@@ -30,7 +30,7 @@ h2 {
 .hero-title {
   font-size: 3em;
   margin-bottom: 10px;
-  color: #000;
+  color: #feb100;
 }
 
 .hero-subtitle {
@@ -41,7 +41,6 @@ h2 {
 
 .hero-description {
   margin-bottom: 30px;
-
 }
 
 .hero-buttons {
@@ -111,18 +110,15 @@ h2 {
   background-repeat: no-repeat;
 }
 
-
 .portfolio-card1:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-
 .portfolio-card2:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-
 
 .portfolio-card3:hover {
   transform: translateY(-5px);
@@ -167,6 +163,7 @@ h2 {
 .reachout p {
   text-align: center;
 }
+
 .reachout button {
   padding: 12px 20px;
   cursor: pointer;
@@ -186,8 +183,6 @@ h2 {
 .reachout button:hover {
   background-color: #062547;
 }
-
-
 
 /* Responsive Design - Example for smaller screens */
 @media (max-width: 768px) {
@@ -214,5 +209,5 @@ h2 {
   .expertise li {
     display: block;
     margin: 10px 0;
-}
+  }
 }
