@@ -4,7 +4,6 @@ body {
     min-height: 100dvh;
     margin: 10px;
     padding: 10px;
-    /* background-color: #f8f8f8; */
   }
 
   footer {
@@ -15,4 +14,5 @@ body {
     width: 100%;
     padding: 10px;
     text-align: center;
+    color: #ffffff;
   }

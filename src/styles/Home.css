@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  /* background-color: #0e182c; */
 }
 
 section {
@@ -41,6 +40,7 @@ h2 {
 
 .hero-description {
   margin-bottom: 30px;
+  color: white;
 }
 
 .hero-buttons {
@@ -48,7 +48,7 @@ h2 {
 }
 
 .hero-cta {
-  background-color: white;
+  background-color: #062547;
   margin-right: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -64,7 +64,10 @@ h2 {
 }
 
 .hero-cta:hover {
-  background-color: #062547;
+  background-color: #ffffff;
+  color: #062547;
+  border: 3px solid #feb100;
+
 }
 
 .profile-pic {
@@ -80,11 +83,16 @@ h2 {
   text-align: center;
 }
 
+.expertise h2 {
+  color: #ffffff;
+}
+
 .expertise li {
   display: inline-block;
   margin: 0 15px;
   padding: 10px;
   border: 2px solid #feb100;
+  color: #ffffff;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -94,6 +102,10 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+
+.portfolio h2 {
+  color: #ffffff;
 }
 
 .portfolio-card1, .portfolio-card2, .portfolio-card3 {
@@ -145,6 +157,10 @@ h2 {
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
+}
+
+.reachout h2 {
+  color: #ffffff;
 }
 
 .reachout input,
