@@ -108,7 +108,7 @@ h2 {
   color: #ffffff;
 }
 
-.portfolio-card1, .portfolio-card2, .portfolio-card3 {
+.portfolio-card1 {
   width: 300px;
   border: 2px solid #feb100;
   padding: 20px;
@@ -117,6 +117,46 @@ h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-image: url('/project_x_icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  .portfolio-card2 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/guess_game.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card3 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/public/perfume_card_icon.PNG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card4 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/sircole_site.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,6 +188,11 @@ h2 {
 }
 
 .portfolio-card3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.portfolio-card4 a {
   text-decoration: none;
   color: white;
 }

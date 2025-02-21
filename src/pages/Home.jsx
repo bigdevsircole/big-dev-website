@@ -49,12 +49,22 @@ export const Home = () => {
               </a>
             </div>
             <div className="portfolio-card2">
-              <h3>Portfolio Website</h3>
-              <p>A personal portfolio showcasing my skills and projects.</p>
+            <a href="https://guess-the-number-game-neon.vercel.app/" target='_blank'>
+              <h3>Guess Game</h3>
+              <p>A guess game where you have the chance to guess the correct number.</p>
+              </a>
             </div>
             <div className="portfolio-card3">
-              <h3>Task Management App</h3>
-              <p>A task management tool built with React and Firebase.</p>
+            <a href="https://perfume-card-psi.vercel.app/" target='_blank'>
+              <h3>Perfume Card</h3>
+              <p>A one page website displaying a perfume products.</p>
+              </a>
+            </div>
+            <div className="portfolio-card4">
+            <a href="https://sircole-site.vercel.app/" target='_blank'>
+              <h3>Sircole Site</h3>
+              <p>The first static demo website for myself on week one into coding career.</p>
+              </a>
             </div>
           </div>
         </section>
