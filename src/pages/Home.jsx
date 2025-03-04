@@ -2,8 +2,32 @@ import profilePic from '../assets/images/caleb-yinusa-headshot.png';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import myresume from '../assets/calebcv.pdf';
+import { useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+
+
+
 
 export const Home = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_jqqfn9q', 'template_pjyxg1p', form.current, 'y-fZwQR7f20KakfWJ')
+            .then((result) => {
+                console.log(result.text);
+                toast.success("Thank you for reaching out!");
+                form.current.reset();
+            }, (error) => {
+                console.log(error.text);
+                toast.error("Failed to send message. Please try again later.");
+            });
+    };
+
     return (
       <div>
         <section className="hero-section">
@@ -43,41 +67,52 @@ export const Home = () => {
           <h2>Portfolio</h2>
           <div className="portfolio-list">
             <div className="portfolio-card1">
-              <a href="https://project-x-plum-omega.vercel.app/" target='_blank'>
+              <a href="https://project-x-plum-omega.vercel.app/" rel="noreferrer" target='_blank'>
               <h3>Project X</h3>
               <p>A demo website that was built on HTML, CSS and Javascript.</p>
               </a>
             </div>
             <div className="portfolio-card2">
-            <a href="https://guess-the-number-game-neon.vercel.app/" target='_blank'>
+            <a href="https://guess-the-number-game-neon.vercel.app/" rel="noreferrer" target='_blank'>
               <h3>Guess Game</h3>
               <p>A guess game where you have the chance to guess the correct number.</p>
               </a>
             </div>
             <div className="portfolio-card3">
-            <a href="https://perfume-card-psi.vercel.app/" target='_blank'>
+            <a href="https://perfume-card-psi.vercel.app/" rel="noreferrer" target='_blank'>
               <h3>Perfume Card</h3>
               <p>A one page website displaying a perfume products.</p>
               </a>
             </div>
             <div className="portfolio-card4">
-            <a href="https://sircole-site.vercel.app/" target='_blank'>
+            <a href="https://sites.google.com/view/calebyinusa/home" rel="noreferrer" target='_blank'>
               <h3>Sircole Site</h3>
-              <p>The first static demo website for myself on week one into coding career.</p>
+              <p>This was the first static website for myself before I got into coding career.</p>
+              </a>
+            </div>
+            <div className="portfolio-card5">
+            <a href="https://myfirst-react-work.vercel.app/" rel="noreferrer" target='_blank'>
+              <h3>First React Project</h3>
+              <p>This was me trying out react for a demo e-commerce website.</p>
+              </a>
+            </div>
+            <div className="portfolio-card6">
+            <a href="https://two-passion-one-purpose.vercel.app/" rel="noreferrer" target='_blank'>
+              <h3>Project TPOP</h3>
+              <p>Two Passion, One Purpose. This project is the bedrock of my ability to build a more beautiful and better projects as I continue my software development journey.</p>
               </a>
             </div>
           </div>
         </section>
 
         <section className="reachout">
-          <h2>Reachout Form</h2>
-          <p>Feel free to reachout for enquiry, collaboration or just a friendly hello!</p>
-          <form>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+          <form ref={form} onSubmit={sendEmail}>
+                <p>Feel free to reachout for enquiry, collaboration or just a friendly hello!</p>
+                <input type="text" name="user_name" placeholder="Your Name" required />
+                <input type="email" name="user_email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
       </div>
     );

@@ -15,7 +15,7 @@ const Expertise = () => {
         <h2>Design</h2>
         <div className="expert-card">
         <ul>
-        <li>Photoshop</li>
+          <li>Photoshop</li>
           <li>CorelDraw</li>
           <li>Figma</li>
           <li>Canva</li>

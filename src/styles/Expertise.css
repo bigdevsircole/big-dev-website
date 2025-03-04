@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  /* background-color: #f8f8f8; */
 }
 
-.expert-card-section h2 {
+h2 {
   font-size: 2em;
   margin-bottom: 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 .expert-card {
@@ -37,25 +37,4 @@ body {
 
 .expert-card li {
   margin-bottom: 10px;
-}
-
-/* Responsive Design for Expert Cards */
-@media (max-width: 768px) {
-  .expert-card {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .expert-card ul {
-      width: 90%;
-      margin: 10px auto;
-  }
-
-  .expert-card li {
-    text-align: center;
-  }
-
-  .expert-card h2 {
-    text-align: center;
-  }
 }

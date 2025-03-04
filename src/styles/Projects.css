@@ -3,73 +3,153 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  /* background-color: #f8f8f8;
-} */
+}
 
-.project-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  margin-top: 40px;
+  justify-content: center;
 }
 
-.card {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card-thumbnail {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.card-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.card-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  min-height: 200px;
-}
-
-.card-content h3 {
-  margin-bottom: 10px;
-  color: #333;
-  text-align: center;
-}
-
-.card-content p {
-  margin-bottom: 20px;
-  color: #666;
-  text-align: center;
-}
-
-.projectLink {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #feb100;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+.portfolio-card1 {
+  width: 300px;
   border: 2px solid #feb100;
-  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/project_x_icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.projectLink:hover {
-  background-color: #0056b3;
-  border-color: #feb100; /* Yellow border on hover */
+  .portfolio-card2 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/guess_game.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card3 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/perfume_card_icon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card4 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/sircole_site.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card5 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/first-react-work.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card6 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/card-6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card3 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.portfolio-card4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card5 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card6 a {
+  text-decoration: none;
+  color: white;
 }

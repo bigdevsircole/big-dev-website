@@ -23,12 +23,12 @@ const Navbar = () => {
       </div>
 
       <div className="icons">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/caleb-yinusa-3ab3442b4/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedinIn} style={{ color: '#feb100', fontSize: '40px' }} />
 
         </a>
 
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/bigdevsircole?t=mvJOSu6ODSQGLq4C_rmCHA&s=08" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faXTwitter} style={{ color: '#feb100', fontSize: '40px' }} />
         </a>
         

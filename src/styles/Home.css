@@ -143,7 +143,7 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-image: url('/public/perfume_card_icon.PNG');
+  background-image: url('/perfume_card_icon.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,6 +157,32 @@ h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-image: url('/sircole_site.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card5 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/first-react-work.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-card6 {
+  width: 300px;
+  border: 2px solid #feb100;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-image: url('/card-6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,6 +203,21 @@ h2 {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+.portfolio-card4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 .portfolio-card1 a {
   text-decoration: none;
   color: white;
@@ -193,6 +234,16 @@ h2 {
 }
 
 .portfolio-card4 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card5 a {
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio-card6 a {
   text-decoration: none;
   color: white;
 }

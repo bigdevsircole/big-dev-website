@@ -1,47 +1,46 @@
 import '../styles/Projects.css';
-import one from '../assets/images/one.png';
-import two from '../assets/images/two.png';
-import three from '../assets/images/three.png';
-import four from '../assets/images/four.png';
-import five from '../assets/images/five.png';
-import six from '../assets/images/six.png';
-import seven from '../assets/images/seven.png';
-import eight from '../assets/images/eight.png';
-import nine from '../assets/images/nine.png';
-
-const projects = [
-  { id: 1, name: 'Project One', description: 'Description for project one', image: one },
-  { id: 2, name: 'Project Two', description: 'Description for project two', image: two },
-  { id: 3, name: 'Project Three', description: 'Description for project three', image: three },
-  { id: 4, name: 'Project Four', description: 'Description for project four', image: four },
-  { id: 5, name: 'Project Five', description: 'Description for project five', image: five },
-  { id: 6, name: 'Project Six', description: 'Description for project six', image: six },
-  { id: 7, name: 'Project Seven', description: 'Description for project seven', image: seven },
-  { id: 8, name: 'Project Eight', description: 'Description for project eight', image: eight },
-  { id: 9, name: 'Project Nine', description: 'Description for project nine', image: nine },
-];
 
 export const Projects = () => {
-  return (
-    <div className="project-card">
-      {projects.map(project => (
-        <div key={project.id} className="card">
-          <div className="card-thumbnail">
-            <img src={project.image} alt={`Image of ${project.name}`} />
-          </div>
-          <div className="card-content">
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <p>
-              <a rel='noopener noreferrer' href="#" target="_blank" className='projectLink'>
-                View Project
+    return (
+      <div className="portfolio-container">
+            <div className="portfolio-card1">
+              <a href="https://project-x-plum-omega.vercel.app/" rel="noreferrer" target='_blank'>
+              <h3>Project X</h3>
+              <p>A demo website that was built on HTML, CSS and Javascript.</p>
               </a>
-            </p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
+            </div>
+            <div className="portfolio-card2">
+            <a href="https://guess-the-number-game-neon.vercel.app/" rel="noreferrer" target='_blank'>
+              <h3>Guess Game</h3>
+              <p>A guess game where you have the chance to guess the correct number.</p>
+              </a>
+            </div>
+            <div className="portfolio-card3">
+            <a href="https://perfume-card-psi.vercel.app/" rel="noreferrer" target='_blank'>
+              <h3>Perfume Card</h3>
+              <p>A one page website displaying a perfume products.</p>
+              </a>
+            </div>
+            <div className="portfolio-card4">
+            <a href="https://sites.google.com/view/calebyinusa/home" rel="noreferrer" target='_blank'>
+              <h3>Sircole Site</h3>
+              <p>This was the first static website for myself before I got into coding career.</p>
+              </a>
+            </div>
+            <div className="portfolio-card5">
+            <a href="https://myfirst-react-work.vercel.app/" rel="noreferrer" target='_blank'>
+              <h3>First React Project</h3>
+              <p>This was me trying out react for a demo e-commerce website.</p>
+              </a>
+            </div>
+            <div className="portfolio-card6">
+            <a href="https://two-passion-one-purpose.vercel.app/" rel="noreferrer" target='_blank'>
+              <h3>Project TPOP</h3>
+              <p>Two Passion, One Purpose. This project is the bedrock of my ability to build a more beautiful and better projects as I continue my software development journey.</p>
+              </a>
+            </div>
+      </div>
+    );
+};
 
 export default Projects;
