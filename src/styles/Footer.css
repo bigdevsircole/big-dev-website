@@ -1,18 +1,27 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
-    margin: 10px;
-    padding: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
 
+footer {
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
   footer {
-    margin-top: auto;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
+    padding: 15px;
+    font-size: 0.8em;
   }
+}

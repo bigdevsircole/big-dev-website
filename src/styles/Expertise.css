@@ -37,4 +37,29 @@ h2 {
 
 .expert-card li {
   margin-bottom: 10px;
+  color: #062547;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .expert-card {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .expert-card ul {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .expert-card li {
+    font-size: 0.9em;
+  }
 }

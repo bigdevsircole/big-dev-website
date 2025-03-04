@@ -14,142 +14,93 @@ body {
   justify-content: center;
 }
 
-.portfolio-card1 {
-  width: 300px;
-  border: 2px solid #feb100;
-  padding: 20px;
-  border-radius: 8px;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-image: url('/project_x_icon.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-  .portfolio-card2 {
-  width: 300px;
-  border: 2px solid #feb100;
-  padding: 20px;
-  border-radius: 8px;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-image: url('/guess_game.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.portfolio-card3 {
-  width: 300px;
-  border: 2px solid #feb100;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-image: url('/perfume_card_icon.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.portfolio-card4 {
-  width: 300px;
-  border: 2px solid #feb100;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-image: url('/sircole_site.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.portfolio-card5 {
-  width: 300px;
-  border: 2px solid #feb100;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-image: url('/first-react-work.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
+.portfolio-card1,
+.portfolio-card2,
+.portfolio-card3,
+.portfolio-card4,
+.portfolio-card5,
 .portfolio-card6 {
   width: 300px;
   border: 2px solid #feb100;
   padding: 20px;
   border-radius: 8px;
+  color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-image: url('/card-6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.portfolio-card1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.portfolio-card1 {
+  background-image: url('/project_x_icon.png');
 }
 
-.portfolio-card2:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.portfolio-card2 {
+  background-image: url('/guess_game.png');
 }
 
-.portfolio-card3:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.portfolio-card3 {
+  background-image: url('/perfume_card_icon.jpg');
 }
 
-.portfolio-card4:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.portfolio-card4 {
+  background-image: url('/sircole_site.png');
 }
 
-.portfolio-card5:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+.portfolio-card5 {
+  background-image: url('/first-react-work.jpg');
 }
 
+.portfolio-card6 {
+  background-image: url('/card-6.jpg');
+}
+
+.portfolio-card1:hover,
+.portfolio-card2:hover,
+.portfolio-card3:hover,
+.portfolio-card4:hover,
+.portfolio-card5:hover,
 .portfolio-card6:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-card1 a {
-  text-decoration: none;
-  color: white;
-}
-
-.portfolio-card2 a {
-  text-decoration: none;
-  color: white;
-}
-
-.portfolio-card3 a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.portfolio-card4 a {
-  text-decoration: none;
-  color: white;
-}
-
-.portfolio-card5 a {
-  text-decoration: none;
-  color: white;
-}
-
+.portfolio-card1 a,
+.portfolio-card2 a,
+.portfolio-card3 a,
+.portfolio-card4 a,
+.portfolio-card5 a,
 .portfolio-card6 a {
   text-decoration: none;
   color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .portfolio-card1,
+  .portfolio-card2,
+  .portfolio-card3,
+  .portfolio-card4,
+  .portfolio-card5,
+  .portfolio-card6 {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
 }
