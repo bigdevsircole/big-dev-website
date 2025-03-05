@@ -1,4 +1,3 @@
-/* Base styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -14,6 +13,7 @@ h2 {
   font-size: 2em;
   margin-bottom: 20px;
   text-align: center;
+  color: #ffffff;
 }
 
 .hero-section {
@@ -75,10 +75,6 @@ h2 {
   text-align: center;
 }
 
-.expertise h2 {
-  color: #ffffff;
-}
-
 .expertise li {
   display: inline-block;
   margin: 0 15px;
@@ -96,16 +92,7 @@ h2 {
   gap: 20px;
 }
 
-.portfolio h2 {
-  color: #ffffff;
-}
-
-.portfolio-card1,
-.portfolio-card2,
-.portfolio-card3,
-.portfolio-card4,
-.portfolio-card5,
-.portfolio-card6 {
+.portfolio-card {
   width: 300px;
   border: 2px solid #feb100;
   padding: 20px;
@@ -118,24 +105,61 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.portfolio-card1:hover,
-.portfolio-card2:hover,
-.portfolio-card3:hover,
-.portfolio-card4:hover,
-.portfolio-card5:hover,
-.portfolio-card6:hover {
+.portfolio-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.portfolio-card1 a,
-.portfolio-card2 a,
-.portfolio-card3 a,
-.portfolio-card4 a,
-.portfolio-card5 a,
-.portfolio-card6 a {
+.portfolio-card a {
   text-decoration: none;
   color: white;
+}
+
+.portfolio-card1 {
+  background-image: url('/project_x_icon.png');
+}
+
+.portfolio-card2 {
+  background-image: url('/guess_game.png');
+}
+
+.portfolio-card3 {
+  background-image: url('/perfume_card_icon.jpg');
+}
+
+.portfolio-card4 {
+  background-image: url('/sircole_site.png');
+}
+
+.portfolio-card5 {
+  background-image: url('/first-react-work.jpg');
+}
+
+.portfolio-card6 {
+  background-image: url('/card-6.jpg');
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-all-link {
+  background-color: #062547;
+  border: 2px solid white;
+  color: #feb100;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.view-all-link:hover {
+  background-color: #ffffff;
+  color: #062547;
+  border: 3px solid #feb100;
 }
 
 .reachout form {
@@ -143,10 +167,6 @@ h2 {
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
-}
-
-.reachout h2 {
-  color: #ffffff;
 }
 
 .reachout input,
@@ -164,6 +184,7 @@ h2 {
 
 .reachout p {
   text-align: center;
+  color: white;
 }
 
 .reachout button {
@@ -224,12 +245,7 @@ h2 {
     align-items: center;
   }
 
-  .portfolio-card1,
-  .portfolio-card2,
-  .portfolio-card3,
-  .portfolio-card4,
-  .portfolio-card5,
-  .portfolio-card6 {
+  .portfolio-card {
     width: 100%;
     max-width: 300px;
   }
