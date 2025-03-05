@@ -30,32 +30,6 @@ export const Reachout = () => {
     <section className="reachout">
       <div className="reachoutCard">
         <h2>Reachout Form</h2>
-        <div>
-          <a
-            rel="noopener noreferrer"
-            href="https://x.com/bigdevsircole?t=mvJOSu6ODSQGLq4C_rmCHA&s=08"
-            target="_blank"
-            className="reachoutIcon"
-          >
-            <FontAwesomeIcon icon={faXTwitter} style={{ color: '#feb100', fontSize: '40px' }} />
-          </a>
-          <a
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/caleb-yinusa-3ab3442b4/"
-            target="_blank"
-            className="reachoutIcon"
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} style={{ color: '#feb100', fontSize: '40px' }} />
-          </a>
-          <a
-            rel="noopener noreferrer"
-            href="https://wa.me/2348180402086"
-            target="_blank"
-            className="reachoutIcon"
-          >
-            <FontAwesomeIcon icon={faWhatsapp} style={{ color: '#feb100', fontSize: '40px' }} />
-          </a>
-        </div>
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <p>Feel free to reach out for enquiry, collaboration, or just a friendly hello!</p>

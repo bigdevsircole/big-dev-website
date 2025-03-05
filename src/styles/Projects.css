@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -76,6 +77,51 @@ body {
   color: white;
 }
 
+/* Flyers Section */
+.flyers-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.flyers-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.flyers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.flyer {
+  background-color: #062547;
+  border: 2px solid #feb100;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flyer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.flyer img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.flyer p {
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9em;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .portfolio-container {
@@ -102,5 +148,19 @@ body {
 
   p {
     font-size: 0.9em;
+  }
+
+  .flyers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .flyer img {
+    height: 120px;
+  }
+
+  .flyer p {
+    font-size: 0.8em;
   }
 }
